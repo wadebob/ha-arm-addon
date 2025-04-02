@@ -1,6 +1,6 @@
 name: "Automatic Ripping Machine"
 version: "1.0.0"
-slug: "automatic_ripping_machine"
+slug: "arm"
 description: "Automatic DVD and Blu-ray ripper for Home Assistant"
 arch:
   - amd64
