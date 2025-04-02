@@ -1,0 +1,28 @@
+name: "Automatic Ripping Machine"
+version: "1.0.0"
+slug: "automatic_ripping_machine"
+description: "Automatic DVD and Blu-ray ripper for Home Assistant"
+arch:
+  - amd64
+  - arm64
+startup: system
+init: false
+homeassistant: false
+host_network: true
+options:
+  ARM_UID: "1001"
+  ARM_GID: "1001"
+schema:
+  ARM_UID: "int"
+  ARM_GID: "int"
+map:
+  - media:rw
+  - config:rw
+ports:
+  8080/tcp: 8080
+privileged: true
+devices:
+  - /dev/sr0:/dev/sr0
+  - /dev/sr1:/dev/sr1
+  - /dev/sr2:/dev/sr2
+  - /dev/sr3:/dev/sr3

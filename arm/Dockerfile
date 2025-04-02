@@ -1,0 +1,1 @@
+FROM automaticrippingmachine/automatic-ripping-machine:latest
